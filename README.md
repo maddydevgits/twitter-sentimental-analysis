@@ -1,4 +1,4 @@
-# sorting-of-specific-tweets
+# Twitter Sentimental Analysis
 Official Repo of my project
 
 # Softwares
