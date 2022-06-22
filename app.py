@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 authentication=OAuthHandler(api.api_key,api.api_secret)
 tapi=API(authentication)
-st.title('sorting of specific tweets on twitter')
+st.title('Twitter Sentimental Analysis')
 tweet_input=st.text_input('Enter a word to search')
 
 def clean_tweets(tweet):
@@ -17,7 +17,7 @@ def clean_tweets(tweet):
 positive_tweets=[]
 negative_tweets=[]
 
-if st.button('sort tweets'):
+if st.button('Preidct Sentiment'):
     print(tweet_input)
     public_tweets=tapi.search_tweets(tweet_input,count=100)
     
